@@ -23,19 +23,19 @@
         header {
             text-align: center;
             padding: 5rem 1rem;
-            background: linear-gradient(to bottom, #ffffff, #f5f5f7);
+            background: linear-gradient(to bottom, #e6f0ff, #f5f5f7);
         }
 
         header h1 {
             font-size: 3rem;
             font-weight: 600;
             color: #1d1d1f;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
 
         header p {
-            font-size: 1.2rem;
-            color: #6e6e73;
+            font-size: 1.4rem;
+            color: #4a4a4a;
             max-width: 700px;
             margin: 0 auto;
         }
@@ -58,7 +58,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         .tool-card {
@@ -68,12 +68,24 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 300px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .tool-card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+        .tool-card:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+        .tool-card:nth-child(3) {
+            transition-delay: 0.3s;
         }
 
         .tool-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
 
         .tool-card h3 {
@@ -92,17 +104,19 @@
         .tool-card a {
             display: inline-block;
             padding: 0.8rem 1.5rem;
-            background: #0071e3;
+            background: linear-gradient(to right, #0071e3, #005bb5);
             color: #ffffff;
             text-decoration: none;
             font-size: 1rem;
             font-weight: 600;
             border-radius: 8px;
-            transition: background 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
         }
 
         .tool-card a:hover {
-            background: #005bb5;
+            background: linear-gradient(to right, #005bb5, #003f88);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         footer {
@@ -111,6 +125,7 @@
             padding: 2rem 1rem;
             background: #f5f5f7;
             color: #6e6e73;
+            border-top: 1px solid #e0e0e0;
         }
 
         footer a {
@@ -120,6 +135,12 @@
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Add loaded state for animations */
+        body.loaded .tool-card {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -139,7 +160,7 @@
             <div class="tool-card">
                 <h3>LexLiber</h3>
                 <p>Access a world of legal knowledge tailored to support your practice's needs.</p>
-                <a href="https://example.com/lexlibr" target="_blank">Discover LexLiber</a>
+                <a href="https://thejohny71.github.io/lexliber/" target="_blank">Discover LexLiber</a>
             </div>
             <div class="tool-card">
                 <h3>Alfie</h3>
@@ -149,7 +170,12 @@
         </div>
     </main>
     <footer>
-        <p>Powered by McDermott Will & Emery. For inquiries, <a href="mailto:info@mwe.com">contact us</a>.</p>
+        <p>Powered by cutting-edge AI innovation. Questions? <a href="mailto:info@example.com">contact us</a>.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("loaded");
+        });
+    </script>
 </body>
 </html>
