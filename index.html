@@ -40,6 +40,14 @@
             margin: 0 auto;
         }
 
+        header .context {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            color: #6e6e73;
+            max-width: 700px;
+            margin: 1.5rem auto;
+        }
+
         main {
             max-width: 1200px;
             margin: 3rem auto;
@@ -120,27 +128,12 @@
         }
 
         footer {
-            text-align: center;
             margin-top: 4rem;
             padding: 2rem 1rem;
             background: #f5f5f7;
             color: #6e6e73;
             border-top: 1px solid #e0e0e0;
-        }
-
-        footer a {
-            color: #0071e3;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Add loaded state for animations */
-        body.loaded .tool-card {
-            opacity: 1;
-            transform: translateY(0);
+            text-align: center;
         }
     </style>
 </head>
@@ -148,34 +141,30 @@
     <header>
         <h1>Simplify. Innovate. Lead.</h1>
         <p>Strategic AI Positioning: Designed for Agility</p>
+        <p class="context">
+            Explore tools designed to streamline legal operations, enhance research efficiency, 
+            and improve workforce management across the firm. Built to meet the demands of today’s global law practice.
+        </p>
     </header>
     <main>
         <h2>Explore Our Tools</h2>
         <div class="tool-list">
             <div class="tool-card">
                 <h3>Seneca</h3>
-                <p>Empower smarter decision-making with the next generation of AI capabilities.</p>
-                <a href="https://chatgpt.com/g/g-YNm0digvU-seneca-ai-assistant" target="_blank">Learn More</a>
+                <p>Your Research Department AI Assistant.</p>
+                <a href="https://chatgpt.com/g/g-YNm0digvU-seneca-ai-assistant" target="_blank">Launch Seneca</a>
             </div>
             <div class="tool-card">
                 <h3>LexLiber</h3>
-                <p>Access a world of legal knowledge tailored to support your practice's needs.</p>
-                <a href="https://thejohny71.github.io/lexliber/" target="_blank">Discover LexLiber</a>
+                <p>Centralized catalog for quick access to legal resources.</p>
+                <a href="https://thejohny71.github.io/lexliber/" target="_blank">Open LexLiber</a>
             </div>
             <div class="tool-card">
                 <h3>Alfie</h3>
-                <p>Streamline leave planning with intuitive scheduling and seamless tracking.</p>
-                <a href="https://example.com/alfie" target="_blank">Plan with Alfie</a>
+                <p>Streamline time-off requests to optimize productivity.</p>
+                <a href="https://example.com/alfie" target="_blank">Access Alfie</a>
             </div>
         </div>
     </main>
-    <footer>
-        <p>Powered by cutting-edge AI innovation. Questions? <a href="mailto:info@example.com">contact us</a>.</p>
-    </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.body.classList.add("loaded");
-        });
-    </script>
 </body>
 </html>
