@@ -76,9 +76,19 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 300px;
-            opacity: 1; /* Ensure cards are visible */
-            transform: translateY(0); /* Reset translation */
-            transition: none; /* Disable animations temporarily */
+            opacity: 0; /* Reintroducing animations */
+            transform: translateY(20px); /* Reintroducing animations */
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .tool-card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+        .tool-card:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+        .tool-card:nth-child(3) {
+            transition-delay: 0.3s;
         }
 
         .tool-card:hover {
@@ -147,5 +157,14 @@
             </div>
         </div>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toolCards = document.querySelectorAll('.tool-card');
+            toolCards.forEach(card => {
+                card.style.opacity = "1";
+                card.style.transform = "translateY(0)";
+            });
+        });
+    </script>
 </body>
 </html>
