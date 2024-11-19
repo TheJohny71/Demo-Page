@@ -62,6 +62,13 @@
             font-weight: 600;
             color: #1d1d1f;
             margin-bottom: 2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        h2:hover {
+            transform: scale(1.05);
+            color: #005bb5;
         }
 
         .tool-list {
@@ -130,17 +137,6 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
-        /* Hover and Click Effects for "Simplify. Innovate. Lead." */
-        .lead-section {
-            cursor: pointer;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-
-        .lead-section:hover {
-            transform: scale(1.05);
-            color: #005bb5;
-        }
-
         /* Keyframe for fade-in animation */
         @keyframes fadeIn {
             from {
@@ -161,21 +157,21 @@
         </p>
     </header>
     <main>
-        <h2 class="lead-section">Simplify. Innovate. Lead.</h2>
+        <h2>Simplify. Innovate. Lead.</h2>
         <div class="tool-list">
             <div class="tool-card">
                 <h3>Seneca</h3>
-                <p>Our Research Department AI Assistant.</p>
+                <p>Increase decision-making speed with AI-powered research.</p>
                 <a href="https://chatgpt.com/g/g-YNm0digvU-seneca-ai-assistant" target="_blank">Launch Seneca</a>
             </div>
             <div class="tool-card">
                 <h3>LexLiber</h3>
-                <p>Centralized catalog for quick access to legal resources.</p>
+                <p>Get fast, accurate access to essential legal resources, anytime.</p>
                 <a href="https://thejohny71.github.io/lexliber/" target="_blank">Open LexLiber</a>
             </div>
             <div class="tool-card">
                 <h3>Alfie</h3>
-                <p>Streamline time-off requests to optimize productivity.</p>
+                <p>Optimize time-off management for improved productivity.</p>
                 <a href="https://example.com/alfie" target="_blank">Access Alfie</a>
             </div>
         </div>
