@@ -5,108 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C-Suite Demo Hub</title>
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(135deg, #f0f4f8, #d9e6f2);
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
             margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
         }
-
         header {
-            background: #0044cc;
-            color: white;
-            width: 100%;
+            background-color: #0044cc;
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
-            padding: 1.5rem 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-
         header h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
+            margin: 0;
+            font-size: 2.5em;
         }
-
         header p {
-            margin-top: 0.5rem;
-            font-size: 1.2rem;
-            opacity: 0.9;
+            margin: 5px 0 0;
+            font-size: 1.2em;
         }
-
         main {
-            width: 90%;
+            padding: 40px 20px;
             max-width: 800px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            margin: 2rem 0;
+            margin: 0 auto;
         }
-
         h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
+            font-size: 2em;
             color: #0044cc;
+            text-align: center;
+            margin-bottom: 20px;
         }
-
         ul {
             list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
+            padding: 0;
         }
-
         li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #f9f9f9;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #0044cc;
+            transition: background-color 0.3s;
         }
-
         li:hover {
-            background: #f0f4f8;
+            background-color: #e6e6e6;
         }
-
         a {
             text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
             color: #0044cc;
-            transition: color 0.3s ease;
+            font-size: 1.2em;
+            display: block;
         }
-
         a:hover {
-            color: #003399;
+            text-decoration: underline;
         }
-
         footer {
-            margin-top: 2rem;
-            font-size: 0.9rem;
+            background-color: #f1f1f1;
+            color: #666666;
             text-align: center;
-            color: #666;
+            padding: 10px;
+            font-size: 0.9em;
         }
-
         footer a {
             color: #0044cc;
             text-decoration: none;
         }
-
         footer a:hover {
             text-decoration: underline;
         }
@@ -115,24 +79,18 @@
 <body>
     <header>
         <h1>C-Suite Demo Hub</h1>
-        <p>Discover innovative tools designed to streamline workflows and drive success</p>
+        <p>Explore Innovative Tools for Enhanced Productivity</p>
     </header>
     <main>
-        <h2>Explore Our Tools</h2>
+        <h2>Our Tools</h2>
         <ul>
-            <li>
-                <a href="https://example.com/seneca" target="_blank">Seneca (Custom GPT)</a>
-            </li>
-            <li>
-                <a href="https://example.com/lexlibr" target="_blank">LexLiber (Catalog App)</a>
-            </li>
-            <li>
-                <a href="https://example.com/alfie" target="_blank">Alfie (PTO Scheduler)</a>
-            </li>
+            <li><a href="https://example.com/seneca" target="_blank">Seneca (Custom GPT)</a></li>
+            <li><a href="https://example.com/lexlibr" target="_blank">LexLiber (Catalog App)</a></li>
+            <li><a href="https://example.com/alfie" target="_blank">Alfie (PTO Scheduler)</a></li>
         </ul>
     </main>
     <footer>
-        <p>Powered by the McDermott Research Department. Questions? <a href="mailto:research@mmm.com">Contact Us</a></p>
+        <p>Powered by McDermott Will & Emery. For inquiries, <a href="mailto:info@mwe.com">contact us</a>.</p>
     </footer>
 </body>
 </html>
