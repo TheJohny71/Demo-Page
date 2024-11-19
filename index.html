@@ -85,6 +85,10 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures the content is evenly distributed */
+            height: 350px; /* Fixes the height for all cards */
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease, background-color 0.3s ease;
@@ -120,6 +124,7 @@
         }
 
         .tool-card a {
+            margin-top: auto; /* Pushes the button to the bottom */
             display: inline-block;
             padding: 0.8rem 1.5rem;
             background: linear-gradient(to right, #0071e3, #005bb5);
